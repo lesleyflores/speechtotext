@@ -1,0 +1,280 @@
+/* Ensure the body/html allows scrolling */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* Allow vertical scrolling */
+    overflow-y: auto; 
+}
+
+.pt-3 {
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 2px 1px 0 rgba(220, 221, 227, 0.37);
+  backdrop-filter: blur( 1.5px );
+  -webkit-backdrop-filter: blur( 1.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+.border-solid {
+  font-family: 'Rwanda Riden', sans-serif;
+  font-size: 40px;
+}
+
+
+/* Give each section a minimum height */
+.section {
+    min-height: 100vh; /* Each section is at least viewport height */
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background-image: url(assets/images/Log-in-page-BG-scaled.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+h1 {
+  font-family: 'Pakenham', sans-serif;
+  font-size: 50px;                                                                            
+}
+
+textarea {
+  text-align: center;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+p {
+    color: white;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 50px;
+    text-align: center;
+    
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.page-description {
+    font-size: 1.1rem;
+    margin: 0 auto;
+}
+
+.tz-link {
+    font-size: 1em;
+    color: #1da7da;
+    text-decoration: none;
+}
+
+.no-browser-support {
+    display: none;
+    font-size: 1.2rem;
+    color: #e64427;
+    margin-top: 35px;
+}
+
+.app {
+    margin: 40px auto;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.364);
+}
+
+
+
+#note-textarea {
+    margin: 20px 0;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 2px 1px 0 rgba(220, 221, 227, 0.37);
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#recording-instructions {
+    margin: 15px auto 60px;
+}
+
+#notes {
+    padding-top: 20px;
+    color: rgba(0, 0, 0, 0.364);
+}
+
+.note .header {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.note .delete-note,
+.note .listen-note {
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.note .content {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 50px 25px;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+}   
+
+
+
+/* -- Demo ads -- */
+
+@media (max-width: 1200px) {
+    #bsaHolder{ display:none;}
+}
+
+.btn-color{
+    background-color: rgba(5, 246, 109, 0.884);
+}
+
+/*--------------------------------------------------------------
+# Credits
+--------------------------------------------------------------*/
+.main-credits {
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    font-size: 13px;
+    color: #fff;
+    z-index: 999999;
+  }
+  
+  @media (max-width: 992px) {
+    .main-credits {
+      justify-content: center;
+      padding: 10px;
+      background-color: rgb(0, 0, 0, 0.85);
+    }
+  }
+  
+
+  
+  @keyframes credits-img {
+    50% {
+      transform: rotateY(180deg);
+    }
+  }
+
+  #web-name{
+    font-family: "copperplate", fantasy;
+  }
+
+
+  /*--------------------------------------------------------------
+# vr-images Section
+--------------------------------------------------------------*/
+.vr-images .vr-images-carousel,
+.vr-images .vr-images-slider {
+  overflow: hidden;
+}
+
+.vr-images .testimonial-item {
+  box-sizing: content-box;
+  text-align: center;
+  min-height: auto;
+}
+
+.vr-images .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 70%;
+  margin: 0 auto;
+}
+
+h2{ 
+  color: rgba(5, 246, 109, 0.884);
+}
+
+.vr-images .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: black;
+}
+
+.vr-images .testimonial-item h4 {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin: 0;
+}
+
+
+.vr-images .testimonial-item p {
+  font-style: italic;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.186);
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.vr-images .testimonial-item p::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid var(--surface-color);
+  border-right: 20px solid ;
+  border-left: 20px solid ;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 20px);
+}
+
+.vr-images .swiper-wrapper {
+  height: auto;
+  width: auto;
+}
+
+.vr-images .swiper-pagination {
+  margin-top: 40px;
+  position: relative;
+}
+
+.vr-images .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--background-color);
+  opacity: 1;
+  border: 1px solid var(--accent-color);
+}
+
+.vr-images .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
